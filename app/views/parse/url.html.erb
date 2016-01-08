@@ -1,0 +1,8 @@
+
+<% @i = @date.count %>
+<p><%=@word%>&<%=@word2%> <%=@i%></p>
+
+<% (0..@i).each do |x| %>
+
+<p><a href="http://finance.naver.com/<%=@address[x]%>"><%=@date[x]%> </p>
+<%end%>
